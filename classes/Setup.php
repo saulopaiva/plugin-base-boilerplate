@@ -16,6 +16,9 @@ class PluginBaseBoilerplateSetup
             $this->reportMissingDependencies($e->getMissingPluginNames());
             return;
         }
+
+        // Initializations
+        (new AcfFilters())->load();
     }
 
     private function loadClasses()
@@ -27,6 +30,9 @@ class PluginBaseBoilerplateSetup
         // Dependency checker
         require_once dirname(__FILE__) . '/DependencyChecker.php';
         require_once dirname(__FILE__) . '/MissingDependencyReporter.php';
+
+        // Plugin
+        require_once dirname(__FILE__) . '/AcfFilters.php';
     }
 
     private function createInstances()

@@ -8,7 +8,7 @@ class PluginBaseBoilerplateDependencyChecker
      */
     const REQUIRED_PLUGINS = array(
         // ADD DEPENDENCIES HERE
-        // 'ACF' => 'advanced-custom-fields-pro/acf.php',
+        'ACF' => 'advanced-custom-fields-pro/acf.php',
     );
 
     /**
