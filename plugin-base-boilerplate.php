@@ -8,6 +8,6 @@
 
 if ( ! class_exists( 'PluginBaseBoilerplateSetup' ) ) {
 	require_once dirname( __FILE__ ) . '/classes/Setup.php';
-	$PluginBaseBoilerplatesetup = new PluginBaseBoilerplateSetup();
-	$PluginBaseBoilerplatesetup->init();
+	$PluginBaseBoilerplateSetup = new PluginBaseBoilerplateSetup();
+	$PluginBaseBoilerplateSetup->init();
 }
